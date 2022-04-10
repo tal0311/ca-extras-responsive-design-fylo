@@ -1,0 +1,43 @@
+.test-list {
+  max-width: 90%;
+  margin: auto;
+  margin-top: toRem(73);
+  // background-color: red;
+  gap: 60px;
+  &.flex {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item {
+    padding: 1rem;
+    max-width: toRem(360);
+    max-height: toRem(200);
+    background-color: hsl(219, 30%, 18%);
+
+    .item-info {
+      &.flex {
+        align-items: center;
+      }
+      img {
+        height: 30px;
+        border-radius: 50%;
+      }
+      .info {
+        font-size: 10px;
+        margin-inline-start: 20px;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    
+  }
+
+
+  @media (max-width:370px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.header {
+  width: 90%;
+  margin: auto;
+  margin-top: toRem(73);
+ 
+  &.flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav{
+   &>*:not(:first-child){
+    margin-inline-start: 30px;
+   }
+  }
+  @media (max-width:370px) {
+    .logo{
+      img{
+        width: 100px;
+        height:auto;
+      }
+    }
+
+    font-size: x-small;
+  }
+}

@@ -1,0 +1,37 @@
+.feature-list {
+  padding-top: 73px;
+  max-width: toRem(880);
+  // background-color: red;
+  margin: auto;
+  align-items: center;
+
+  &.flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: toRem(147);
+  }
+
+  .feature {
+    font-size: smaller;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    max-width: toRem(350);
+    max-height: toRem(213);
+    &.flex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-wrapper {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 370px) {
+  &.flex{
+    gap: 30px;
+  }
+  }
+}

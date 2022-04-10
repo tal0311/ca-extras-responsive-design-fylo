@@ -1,0 +1,43 @@
+.contact-form {
+ position: relative;
+ bottom:toRem(-100);
+  padding: toRem(44) toRem(77);
+  background-color: hsl(219, 30%, 18%);
+  max-width: toRem(860);
+  margin: auto;
+  margin-top: toRem(170);
+  text-align: center;
+
+  .form-action-container {
+    &.flex {
+      gap: toRem(27);
+    }
+
+    input {
+      border-radius: toRem(28);
+      padding: 10px;
+
+      flex: 1;
+    }
+    .action-btn {
+      @include btn;
+    }
+  }
+
+  @media (max-width: 370px) {
+    padding: 1rem;
+    .form-action-container {
+      &.flex {
+        flex-direction: column;
+        align-items: center;
+        gap: toRem(14);
+      }
+      input {
+       width: 100%;
+      }
+      .action-btn{
+       width: 100%;
+      }
+    }
+  }
+}

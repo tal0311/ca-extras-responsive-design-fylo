@@ -1,0 +1,42 @@
+.hero {
+  &.main-layout {
+    margin-top: 73px;
+  }
+  max-width: 90%;
+  margin: auto;
+  &.flex {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      text-align: center;
+    }
+  }
+  .info-container {
+    max-width: 50%;
+    text-align: center;
+    margin: 0;
+    p {
+      line-height: toRem(30);
+    }
+
+    .main-btn {
+      @include btn;
+    }
+  }
+
+  @media (max-width: 370px) {
+    img {
+      width: 340px;
+      width: 225px;
+    }
+
+    .info-container {
+      max-width: 100%;
+    }
+    width: 100vw;
+    &.flex {
+      flex-direction: column;
+    }
+  }
+}
